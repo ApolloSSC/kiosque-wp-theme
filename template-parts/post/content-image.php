@@ -11,17 +11,18 @@
  */
 ?>
 
+<?php
+// If a regular post or page, and not the front page, show the featured image.
+if ( has_post_thumbnail() && ( is_single() || ( is_page() && ! kiosque_is_frontpage() ) ) ) : ?>
+    <div class="image-article" style="background-image: url(<?php the_post_thumbnail_url(); ?>)"></div>
+<?php endif; ?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
 		if ( is_sticky() && is_home() ) :
 			echo kiosque_get_svg( array( 'icon' => 'thumb-tack' ) );
 		endif;
 	?>
-    <?php
-        // If a regular post or page, and not the front page, show the featured image.
-        if ( has_post_thumbnail() && ( is_single() || ( is_page() && ! kiosque_is_frontpage() ) ) ) : ?>
-            <div class="image-article" style="background-image: url(<?php the_post_thumbnail_url(); ?>)"></div>
-    <?php endif; ?>
     <div class="contenu-article">
         <header class="entry-header">
             <?php

@@ -1699,8 +1699,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 .single-post article{
 	width: 100%;
 	min-height: 100%;
-	overflow: auto;
-	height: 100%;
+	/*overflow: auto;*/
 	padding:0px 0px 50px 0px;
 	z-index: 99;
 	background: #FFF;
@@ -1793,9 +1792,11 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 	padding:20px;
 }
 
-.single-post .post_format-post-format-image .image-article{
+.single-post .image-article{
 	width: 60%;
-	float:left;
+	float: left;
+	position: fixed;
+	left: 0;
 	height: 100%;
 	background-size: cover;
 	background-position: center;
@@ -1803,8 +1804,9 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 }
 .single-post .post_format-post-format-image .contenu-article{
 	width:40%;
-	height: 100%;
-	overflow: auto;
+	height: auto;
+	padding-bottom: 50px;
+	background: #FFF;
 	float:right;
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
@@ -2119,7 +2121,7 @@ body:not(.kiosque-front-page) .entry-header {
 /* Post Navigation */
 
 .post-navigation {
-	position: absolute;
+	position: fixed;
 	bottom: 0px;
 	right: 0px;
 	left: 0px;
