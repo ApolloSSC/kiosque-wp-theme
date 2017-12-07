@@ -15,6 +15,6 @@
 	<label for="<?php echo $unique_id; ?>">
 		<span class="screen-reader-text"><?php echo _x( 'Search for:', 'label', 'kiosque' ); ?></span>
 	</label>
-	<input type="search" id="<?php echo $unique_id; ?>" class="search-field" placeholder="<?php echo esc_attr_x( 'Search &hellip;', 'placeholder', 'kiosque' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
+	<input type="search" id="<?php echo $unique_id; ?>" class="search-field" placeholder="Recherche..." value="<?php echo get_search_query(); ?>" name="s" required />
 	<button type="submit" class="search-submit"><?php echo kiosque_get_svg( array( 'icon' => 'search' ) ); ?><span class="screen-reader-text"><?php echo _x( 'Search', 'submit button', 'kiosque' ); ?></span></button>
 </form>

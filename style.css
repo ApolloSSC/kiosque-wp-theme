@@ -63,6 +63,7 @@ html {
 	background-position: center;
 	background-repeat: no-repeat;
 	overflow: hidden;
+	min-height: 100%;
 }
 
 @media screen and ( max-width: 782px ) {
@@ -77,6 +78,8 @@ html {
 body {
 	margin: 0;
 	background: transparent;
+	overflow: hidden;
+	min-height: 100%;
 }
 
 article,
@@ -586,7 +589,7 @@ blockquote {
 }
 
 q {
-	quotes: "“" "”" "‘" "’";
+	quotes: "â€œ" "â€" "â€˜" "â€™";
 }
 
 blockquote:before,
@@ -1330,7 +1333,7 @@ a.btn-primary.btn-icon{
 .sub-category-navigation .current-menu-item a {
 	border-top:0px;
 	background: #e39740;
- }
+}
 
 /* Menu toggle */
 
@@ -1493,6 +1496,9 @@ html {
 .empty-search-result .search-form{
 	float: none;
 }
+.empty-search-result p{
+	margin: 10px;
+}
 /* Site branding */
 
 body.has-header-image .site-title,
@@ -1648,8 +1654,10 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 }
 .apercu-article .tag-list{
 	text-align: right;
-	float:right;
-	width:190px;
+    position: absolute;
+	right: 3px;
+	left: 90px;
+    top: 2px;
 }
 .apercu-article .tag-list a{
 	padding:2px 5px;
@@ -1692,7 +1700,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 }
 
 .apercu-article-aside{
-	background-color: #d57e00;
+	background-color: #007ed5;
 	color: #FFF;
 }
 

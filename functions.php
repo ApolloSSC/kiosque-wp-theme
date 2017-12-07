@@ -12,7 +12,7 @@
 /**
  * Kiosque only works in WordPress 4.7 or later.
  */
-if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '<' ) ) {
+if ( version_compare( $GLOBALS['wp_version'], '4.2.2', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
 	return;
 }

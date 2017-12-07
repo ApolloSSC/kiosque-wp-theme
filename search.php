@@ -38,7 +38,6 @@ get_header(); ?>
 
         <div class="empty-search-result">
             <p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'kiosque' ); ?></p>
-            <?php get_search_form(); ?>
         </div>
         <?php
     endif;

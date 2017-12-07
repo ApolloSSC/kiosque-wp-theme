@@ -247,7 +247,8 @@
 	});
 
 	function setContentHeight(){
-        var contentHeight = window.innerHeight - $("#content").offset().top;
+        // debugger;
+        var contentHeight = $(window).height() - $("#content").offset().top;
         $("#content").css("height", contentHeight+"px");
 	}
 	//Content height
