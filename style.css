@@ -1652,12 +1652,14 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 	position: relative;
 	box-shadow: 0px 5px 3px -3px rgba(0,0,0,0.2) inset;
 }
-.apercu-article .tag-list{
+.apercu-article .tag-list{	
 	text-align: right;
     position: absolute;
-	right: 3px;
-	left: 90px;
+    right: 3px;
+    left: 90px;
     top: 2px;
+    overflow: hidden;
+    height: 42px;
 }
 .apercu-article .tag-list a{
 	padding:2px 5px;
